@@ -18,7 +18,7 @@
 
     <!-- ====================  BEGIN: Include add-to-homescreen resources  ==================== -->
 
-    <link rel="stylesheet" href="./add-to-homescreen.min.css" />
+    <link rel="stylesheet" href="./dist/add-to-homescreen.min.css" />
   <script defer src="add-to-homescreen_fr.min.js"></script><link href="add-to-homescreen.min.css" rel="stylesheet"></head>
   <!-- ====================  END: Include add-to-homescreen resources  ==================== -->
   <!-- ====================  BEGIN: Testing Tailwind CSS side effects ================ -->
@@ -530,8 +530,7 @@
       </div>
       <div class="locales">
         <div>Locales</div>
-        <ul id="locales"><li><a href="index_en.html">EN</a></li>
-<li><a href="index_fr.html">FR</a></li></ul>
+        <ul id="locales"></ul>
       </div>
     </div>
 
@@ -725,8 +724,8 @@
         window.AddToHomeScreenInstance = window.AddToHomeScreen({
           appName: "Aardvark", // Name of the app. [Required]
           appNameDisplay: "standalone", // Display position of the app name [Optional]
-          appIconUrl: "./assets/sample/img/aardvark-logo.png", // App icon link (square, at least 40 x 40 pixels) [Required]
-          assetUrl: "./assets/img/", // Link to directory of library image assets [Required]
+          appIconUrl: "./dist/assets/sample/img/aardvark-logo.png", // App icon link (square, at least 40 x 40 pixels) [Required]
+          assetUrl: "./dist/assets/img/", // Link to directory of library image assets [Required]
           maxModalDisplayCount: -1, // If set, the modal will only show this many times [Optional. Default: -1 (no limit).]
           displayOptions:{ showMobile: true, showDesktop: true }, // show on mobile/desktop [Optional] Default: show everywhere
           allowClose: true, // allow the user to close the modal by tapping outside of it. [Optional. Default: true]

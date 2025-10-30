@@ -821,3 +821,8 @@
   right: 88px;
   animation: adhs-ios-chrome-bouncing-arrow-animation 1.5s infinite;
 }
+
+.adhs-container img
+{
+  vertical-align: unset;
+}

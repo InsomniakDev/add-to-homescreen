@@ -244,7 +244,7 @@ function AddToHomeScreen(options) {
                 }
                 else if (isBrowserIOSFirefox()) {
                     ret = new types_1.DeviceInfo((_isStandAlone = false), (_canBeStandAlone = true), (_device = _device));
-                    console.log("firefoxmobileIOS");
+                    // Until better option
                     _genIOSSafari(container);
                 }
                 else if (isBrowserIOSInAppFacebook()
