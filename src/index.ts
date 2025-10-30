@@ -144,36 +144,44 @@ export function AddToHomeScreen(
         // ios
         if (isBrowserIOSSafari26() && !isBrowserIOSIPadSafari()) {
           ret = new DeviceInfo(
-            (_isStandAlone = false),
-            (_canBeStandAlone = true),
-            (_device = _device)
+              (_isStandAlone = false),
+              (_canBeStandAlone = true),
+              (_device = _device)
           );
 
           _genIOSSafariIOS26(container);
         } else if (isBrowserIOSSafari26() && isBrowserIOSIPadSafari()) {
           ret = new DeviceInfo(
-            (_isStandAlone = false),
-            (_canBeStandAlone = true),
-            (_device = _device)
+              (_isStandAlone = false),
+              (_canBeStandAlone = true),
+              (_device = _device)
           );
 
           _genIOSIPadSafariIOS26(container);
         } else if (isBrowserIOSSafari()) {
           ret = new DeviceInfo(
-            (_isStandAlone = false),
-            (_canBeStandAlone = true),
-            (_device = _device)
+              (_isStandAlone = false),
+              (_canBeStandAlone = true),
+              (_device = _device)
           );
 
           _genIOSSafari(container);
         } else if (isBrowserIOSChrome()) {
           ret = new DeviceInfo(
-            (_isStandAlone = false),
-            (_canBeStandAlone = true),
-            (_device = _device)
+              (_isStandAlone = false),
+              (_canBeStandAlone = true),
+              (_device = _device)
           );
 
           _genIOSChrome(container);
+        } else if (isBrowserIOSFirefox()) {
+          ret = new DeviceInfo(
+              (_isStandAlone = false),
+              (_canBeStandAlone = true),
+              (_device = _device)
+          );
+          // Until better option
+          _genIOSSafari(container);
         } else if (
           isBrowserIOSInAppFacebook() 
           || isBrowserIOSInAppLinkedin()
